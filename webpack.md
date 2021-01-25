@@ -18,9 +18,9 @@
 ```
 	modult exports = { 
 		mode: 'development', // develoption production 开发模式不会压缩，生产模式文件会被压缩
-		plugins: { 
+		plugins: [ 
 			htmlPlugin // plugins参考下方介绍
-		}
+		]
 	}
 ```
   
@@ -50,4 +50,22 @@
 		template: path.join(_dirname, './src/index.html'),	  
 		filename: 'index.html'	  
 	})	 
+```
+
+### webpack配置第三方loader
+webpack只能打包处理***.js***后缀名类型的文件，像.png、.vue无法主动处理，所以必须要配置第三方loader  
+```
+	modules.export = {
+		mode: 'development',
+		plugins: [htmlPlugin],
+		module: { // 所有第三方模块的配置规则
+			rules: [ // 一般用s复数词结尾的单词配置的时候，会使用数组，不带s则一般为对象
+				{
+					text: /\.js|jsx$/,
+					use: 'babel-loader',
+					exclude: /node_modules/ // 千万别忘记添加exclude排除项
+				}
+			]
+		}
+	}
 ```

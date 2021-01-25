@@ -49,8 +49,50 @@ react中并没有vue中一样的模板文件，在react中一切都是以js来�
 2. 安装react脚手架`npm install -g create-react-app`
 3. 创建react项目`create-react-app react-hello`
 4. 如果网站上有robots.txt的文件在爬虫界是一种君子协议，告知爬虫不要爬某些内容
+5. react，专门用于创建组件和虚拟DOM的，同时组件的生命周期都在这个包中
+6. react-dom，专门进行DOM操作的，最主要应用场景，就是`reactDOM.render()`
+
+### React 创建虚拟DOM元素
++ 参数1：创建的元素的类型，字符串，表示元素的名称、
++ 参数2：是一个对象或者null，表示当前这个DOM元素的属性
++ 参数3：子节点（包括其他虚拟DOM获取的文本子节点）
++ 参数n：其他子节点
++ 官方不推荐创建虚拟DOM的方式  
+```
+	<h1 id='myh1' title='this is a h1'>这是一个大大的H1</h1>
+	const myh1 = React.createElement('h1', null, '这是一个大大的h1')
+	const myh1 = React.createElement('h1', { id: 'myh1', title:'this is a h1' }, '这是一个大大的h1')
+	// 不建议这样使用嵌套，还是按照HTML写即可
+	const mydiv = React.createElement('div', null, '这里是一个div元素', myh1)
+```
+
+### React 将虚拟DOM渲染到页面
++ 参数1：要渲染的虚拟DOM元素
++ 参数2：指定页面上一个DOM元素当作容器
++ `ReactDOM.render(myh1, document.getElementById('app'))`
 
 ### React JSX
+1. 在JS文件中默认不可以写类似HTML的标记，否则会打包失败
+2. 可以使用babel来转换JS中的HTML标签，他会自动转换成创建虚拟DOM的那种语法，实质上还是创建了虚拟DOM
+3. 混合写入类似于HMTL的语法，叫做JSX语法，是符合XML规范的JS
+
+### React 如何启用JSX
+1. 安装bebel插件
++ `npm install babel-core babel-loader babel-plugin-transform-runtime -D`
++ `npm install babel-preset-env babel-preset-stage-0 -D`
+2. 安装能够识别转换JSX语法的包
++ `npm install babel-preset-react -D`
+3. 添加 ***.babelrc*** 配置文件
+```
+	{
+		'preset': ['env', 'stage-0', 'react'],
+		'plugins': ['transform-runtime']
+	}
+```
+4. 添加 ***.babel-loader*** 配置项，参考 ***webpack.md*** 中 ***webpack配置第三方loader*** 的代码
+5. 这些好像都是从零开始使用React所需要装载的一些依赖，如果是`create-react-app`方式安装貌似不需要走这些依赖配置步骤
+
+### React JSX优缺点和表达式
 优点
 1. JSX执行更快，编译为JavaScript代码时进行优化
 2. 类型更安全，编译过程中如果出错就不能编译，及时发现错误
@@ -70,10 +112,10 @@ react中并没有vue中一样的模板文件，在react中一切都是以js来�
 ### React 注释和样式
 1. 不可以直接在JSX中用行内样式，必须用对象属性的方式才可以添加行内样式，而且对象属性必须用驼峰输入法或者用引号引起来方式，否则会直接报错
 ```
-let exampleStyle = {
-	borderBottom: '1px solid red',
-	'background-color': 'red'
-}
+	let exampleStyle = {
+		borderBottom: '1px solid red',
+		'background-color': 'red'
+	}
 ```
 2. 多个内容class，不是使用数组，而是使用字符串空格字符串的方式 `class='class1 class2'`
 3. 注释的方式是在花括号中用斜杠星 `{ /* 这里写注释 */ }`
