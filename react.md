@@ -92,6 +92,30 @@ react中并没有vue中一样的模板文件，在react中一切都是以js来�
 4. 添加 ***.babel-loader*** 配置项，参考 ***webpack.md*** 中 ***webpack配置第三方loader*** 的代码
 5. 这些好像都是从零开始使用React所需要装载的一些依赖，如果是`create-react-app`方式安装貌似不需要走这些依赖配置步骤
 
+### React JSX中混合写入JS表达式
+1. 在JSX语法中，要将JS代码写到花括号{}中
+2. 应用场景
++ 渲染数字
++ 渲染字符串
++ 渲染布尔值
++ 为属性绑定值
++ 渲染JSX元素
++ 渲染JSX元素数组
++ 将普通字符串数组，转为JSX数组并渲染到页面上[两种方案]
+```
+	const strArr = ['a', 'b', 'c', 'd']
+	const nameArr = [];
+	strArr.forEach(item => {
+		cosnt temp = <h5>{item}</h5>
+		nameArr.push(temp)
+	})
+	ReactDOM.render(
+		<div>
+			{nameArr}
+		</div>, document.getElementById('app')
+	)
+```
+
 ### React JSX优缺点和表达式
 优点
 1. JSX执行更快，编译为JavaScript代码时进行优化
@@ -119,8 +143,7 @@ react中并没有vue中一样的模板文件，在react中一切都是以js来�
 ```
 2. 多个内容class，不是使用数组，而是使用字符串空格字符串的方式 `class='class1 class2'`
 3. 注释的方式是在花括号中用斜杠星 `{ /* 这里写注释 */ }`
-4. class和style当中，不可以存在多个class属性，就是不可以写两个calss属性在一个元素中，属性值可以写多个class，参考2
-
+4. class和style当中，不可以存在多个class属性，就是不可以写两个calss属性在一个元素中，属性值可以写多个class，参考2  
 PS：插入一个小知识点，数组合并的方法，`join()`
 
 ### React 组件
