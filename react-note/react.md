@@ -164,6 +164,24 @@ react中并没有vue中一样的模板文件，在react中一切都是以js来�
 2. 类组件，又称动态组件，一般用于有交互或者数据修改的操作。组件传参，通过this.props
 3. 复合组件，组件中又有其他组件就叫复合组件，既可以有函数组件又可以有类组件
 
+<!-- 20210129看了十分钟React看到这里非常抱歉，周一从这里继续学习 -->
+### React 创建组件的方式
+1. 第一种方式，函数式组件
+```
+	function Hello(){
+		// 如果在一个组件中return一个null
+		return null
+	}
+	
+	ReactDom.render(
+		<div>
+			{/* 直接把组件的名称，以标签的形式，丢到页面上即可 */}
+			<Hello></Hello>
+		</div>,
+		document getElementById('app')
+	)
+```
+
 ### React State
 1. 相当于Vue中的data函数
 2. 修改状态使用setState，如果要查看setState实时修改的数据需要调用回调函数，因为这是一个异步操作
