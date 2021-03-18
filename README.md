@@ -1,5 +1,5 @@
 # fx67llReact
-learn react
+learn React
 
 ### 从零开始学习React
 ### 目标是通过从做一个echarts的私人共享库来边学习边实战
