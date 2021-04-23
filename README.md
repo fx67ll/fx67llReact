@@ -1,6 +1,12 @@
 # fx67llReact
 learn React
 
+## 0.1.2.20210423（AntDesignPro-SEM-test）
+* 添加边学习边开发的项目目录，可以随意删减代码，基于`AntDesignPro-SEM`copy
+
+## 0.1.1.20210421（AntDesignPro-SEM-simple）
+* 考虑了一下除了完整版，简易版后期也有一定作用，先下载保留目录，待后期决定
+
 ## 0.1.0.20210414（AntDesignPro-SEM）
 * 项目重新启动，重新规划一下学习路线
 
