@@ -1,6 +1,9 @@
 # fx67llReact
 learn React
 
+## 0.x.x.202105xx
+* `下一版本`可以边学边做了，先从新增页面和组件开始，在原有架子上继续添加
+
 ## 0.1.2.20210423（AntDesignPro-SEM-test）
 * 添加边学习边开发的项目目录，可以随意删减代码，基于`AntDesignPro-SEM`copy
 
