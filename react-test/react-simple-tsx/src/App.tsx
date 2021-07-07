@@ -2,12 +2,15 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { Button } from 'antd';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+		  <Button type="primary">Ant Design Button</Button> <br/>
 		  react tsx test <br/>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
