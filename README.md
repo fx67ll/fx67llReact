@@ -5,6 +5,13 @@ learn React
 * `下一版本`可以边学边做了，先从新增页面和组件开始，在原有架子上继续添加  
 * 貌似直接上手有点困难，还是慢慢看一点点的入手，但是不要停滞，一点点推进  
 
+## 0.1.3.20210713
+* 发现一个小问题：`react-test -> ant-design-master-test`不可以直接在文件夹目录执行操作，会导致项目自动检查当前git地址，并从git发布从而导致问题  
+* 解决的方案就是把所有文件提取出来，然后在非github项目目录下执行命令，这样就不会影响发布  
+* 也可以直接从官网下载4.16.6版本的文件，直接把当前`package.json`拷贝覆盖过去即可  
+* `npm install` -> `npm run build` -> `npm login` -> `npm publish`  
+* 私服发布需要修改`package.json`下的`publishConfig`参数，这个是发布的地址  
+
 ## 0.1.3.20210707
 * 新建项目`react-test -> react-simple-jsx && react-simple-tsx`尝试验证公司某项目的可行性  
 
