@@ -1,0 +1,2 @@
+主要训练的是从零搭建React项目，主要用js写React  
+AntDesign那个项目主要锻炼使用组件库是TypeScript  
