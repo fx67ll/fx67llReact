@@ -34,3 +34,5 @@
 1. 生命周期钩子函数使用的频率还是比较高的  
 
 #### 关于React不要纠结用Hooks还是Class，都应该去了解，官方并没有放弃Class  
+1. 先学Hook版本的React  
+2. 再学Class版本的React  
