@@ -1,8 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Router from "./router/router.js";
 import reportWebVitals from "./reportWebVitals";
+
+// 路由
+import Router from "./router";
+
+// 全局数据
+import { Provider } from "react-redux";
+import store from "./store";
 
 function renderDom() {
   // StrictMode 是一个用以标记出应用中潜在问题的工具
@@ -12,7 +18,9 @@ function renderDom() {
   // 优点：https://www.jianshu.com/p/978bcea8fcb9
   ReactDOM.render(
     <React.StrictMode>
-      <Router />
+      <Provider store={store}>
+        <Router />
+      </Provider>
     </React.StrictMode>,
     document.getElementById("root")
   );

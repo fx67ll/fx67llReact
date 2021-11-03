@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 function List() {
   // 如何从路由中解析简单的字符串参数
+  // hook中，用useHistory传递params参数，用useLocation接受parmas参数
   let { id: dataId } = useParams();
   console.log(dataId, typeof dataId);
 
@@ -29,7 +30,7 @@ function List() {
     setInputText(e.target.value);
   };
 
-  // 测试一下副作用钩子，清除方法是return一个清除方法  
+  // 测试一下副作用钩子，清除方法是return一个清除方法
   const [position, setPosition] = useState({ x: 0, y: 0 });
   useEffect(() => {
     const updateMousePosition = (e: MouseEvent) => {
