@@ -1,14 +1,15 @@
-# 对比Vue路由快速上手React路由的配置和使用
+# 快速上手React路由(Hook版本&Class版本)的配置和使用  
 
-首先需要说明的是，本文并非要将React路由的所有知识点全部详细说明，而是希望Vue开发者在转型学习React的时候可以通过参考这个文档，
-快速上手React的路由配置和使用，你可以依据自身情况决定是否要阅读此文  
+前端单页面组件化时代到来之后，页面的跳转一直都由统一的路由管理，所以今天我们就来详细总结一下关于`React路由`你所需要了解的知识  
 
-尤大在Vue编写之初，就是参考了很多React和Angular框架的一些设计方式，所以它们很多地方都有相似之处，
-通过对比我们就可以快速理解上手React的路由，那么，废话不多说，我们进入今天的正题  
+### 依赖
 
-
-### 对比
 
 [参考文档一 ———— react路由（标签属性、Hooks、路由跳转、传值、守卫、懒加载）总结大全](https://www.cnblogs.com/-roc/p/14522546.html)  
 [参考文档二 ———— ReactRouter中HashRouter和BrowserRouter的区别](https://www.cnblogs.com/flamestudio/p/11965991.html)  
 [参考文档三 ———— React Router 5 完整指南](https://juejin.cn/post/6966242922278682632#heading-14)  
+
+
+我是 [fx67ll.com](https://fx67ll.com)，如果您发现本文有什么错误，欢迎在评论区讨论指正，感谢您的阅读！  
+如果您喜欢这篇文章，欢迎访问我的 [本文github仓库地址]()，为我点一颗Star，Thanks~ :)  
+***转发请注明参考文章地址，非常感谢！！！***
