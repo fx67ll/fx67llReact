@@ -1,4 +1,4 @@
-# 详解React组件(Hook版本&Class版本)之间的通信  
+# 详解React父子、兄弟、家族嵌套组件之间的通信(react@16.8之后Hook版本)  
 
 在前端组件化的时代，任何一个框架最重要的部分之一，一定包含组件之间通信的设计方式，`React`也不例外，今天我们就来详细总结一下`React组件通信`的方式  
 
@@ -9,8 +9,6 @@
 [参考文档二 ———— React-Hooks中的useRef和forwardRef](https://juejin.cn/post/6882918232978620423)  
 [参考文档三 ———— React组件间通信](https://juejin.cn/post/6844903828945387528)  
 [参考文档四 ———— React的useContext的使用](https://juejin.cn/post/6896353934525497357)  
-[参考文档五 ———— Redux官方文档（强烈推荐，写的通俗易懂，不过是英文的）](https://redux.js.org/usage/configuring-your-store)  
-[参考文档六 ———— redux的基本使用（hook）](https://blog.csdn.net/earthOLtainanwan/article/details/108494459)  
 
 
 我是 [fx67ll.com](https://fx67ll.com)，如果您发现本文有什么错误，欢迎在评论区讨论指正，感谢您的阅读！  
