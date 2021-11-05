@@ -1,6 +1,9 @@
 # fx67llReact
 learn React
 
+## 0.2.4.20211105  
+* 更新笔记：使用Redux快速入门上手React全局状态管理(React@16.8之后的Hook版本+Redux@Toolkit)（未完成，周末弄完）
+
 ## 0.2.3.20211103
 * 更新笔记：详解React组件(Hook版本&Class版本)之间的通信（还未开始动笔，预计月内完成）  
 
