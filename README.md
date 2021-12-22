@@ -8,6 +8,9 @@ learn React
 |  React博客文章  |  React初学项目示例  |  React某学习项目主分支  |  React学习笔记  |  React学习项目  |  React学习项目测试  |
 
 
+## 0.2.5.20211222
+* 添加目录说明  
+
 ## 0.2.4.20211105  
 * 更新笔记：使用Redux快速入门上手React全局状态管理(React@16.8之后的Hook版本+Redux@Toolkit)（未完成，周末弄完）
 
