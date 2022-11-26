@@ -5,7 +5,7 @@ learn React
 ### 主目录说明
 |  react-blog   | react-hello  |  react-master  |  react-note  |  react-project  |  react-test  |
 |  :----:  |  :----:  |  :----:  |  :----:  |  :----:  |  :----:  |
-|  React博客文章  |  React初学项目示例  |  React某学习项目主分支  |  React学习笔记  |  React学习项目  |  React学习项目测试  |
+|  React博客文章  |  React初学项目示例  |  React某学习项目主分支  |  React学习笔记  |  React学习项目（部分示例一直告警所以暂时删除部分示例）  |  React学习项目测试  |
 
 
 ## 0.2.5.20211222
